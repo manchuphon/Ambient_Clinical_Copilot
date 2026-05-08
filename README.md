@@ -7,6 +7,23 @@
 - [ ] ถ้า API fail → ใช้ fallback response (built-in อัตโนมัติ)
 
 ---
+thai-clinical-copilot/
+├── app/
+│   ├── page.tsx              ← หน้า Upload (คนที่ 2)
+│   ├── review/page.tsx       ← หน้า Doctor Review (คนที่ 2)
+│   └── api/
+│       ├── transcribe/       ← Whisper API (คนที่ 1)
+│       └── generate-soap/    ← GPT-4o API (คนที่ 1)
+├── components/
+│   ├── SOAPSection.tsx       ← [NOT SPECIFIED] highlight
+│   ├── ICDBadge.tsx          ← confidence % badge
+│   └── NHSOBadge.tsx         ← สิทธิบัตรทอง indicator
+├── lib/
+│   ├── prompts.ts            ← System Prompt (คนที่ 3 แก้ไข)
+│   └── fallback.ts           ← hardcoded backup กัน crash
+├── data/icd10-thai.json      ← dialect mapping
+└── demo/script.md            ← demo script + judge Q&A
+
 
 ## Scene 1: Dialect Test (60 วินาที)
 **ไฟล์:** `demo/audio/scene1-dialect.mp3`
