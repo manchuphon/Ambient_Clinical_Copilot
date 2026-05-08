@@ -67,24 +67,3 @@
 
 ---
 
-## Judge Q&A — คำตอบสำเร็จรูป
-
-**Q: "ถ้า AI ผิด ใครรับผิดชอบ?"**
-> "ระบบเป็น assistive tool เท่านั้น ไม่ใช่ autonomous system
-> ทุก SOAP Note ต้องผ่าน doctor review และ sign-off
-> ก่อน submit ทุกครั้ง เห็นได้จากหน้า Review ที่ต้องกด Confirm"
-
-**Q: "PDPA ทำยังไง?"**
-> "Demo นี้ใช้ synthetic data ทั้งหมด
-> Production จะ deploy บน GDCC government cloud
-> พร้อม encrypted storage และ explicit patient consent"
-
-**Q: "ทำไมไม่ใช้ Microsoft DAX?"**
-> "DAX ราคา 400-1,000 ดอลลาร์ต่อเดือน สูงเกินงบ รพ.ชุมชนไทย
-> ไม่รองรับภาษาถิ่นและ Thai code-switching
-> เราทำราคา 30-80 ดอลลาร์ต่อเดือน Thai-native ตั้งแต่ต้น"
-
-**Q: "Accuracy เท่าไหร่?"**
-> "เราไม่อ้าง accuracy เพราะนั่นคือสิ่งที่ responsible AI ต้องทำ
-> แทนที่เราแสดง confidence score ทุก field
-> และบังคับให้แพทย์ review ทุกครั้ง"
